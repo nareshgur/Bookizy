@@ -1,0 +1,12 @@
+const express = require('express')
+const cors = require("cors")
+const Auth = require("../controllers/AuthController")
+const City = require('../controllers/CityController')
+const Theatre = require("../controllers/TheatreController")
+module.exports = function (app){
+    app.use(express.json())
+    app.use(express.urlencoded({extended:true}))
+    app.use("/api/Auth",Auth)
+    app.use("/api/City",City)
+    app.use("/api/Theatre",Theatre)
+}
