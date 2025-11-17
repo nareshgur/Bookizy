@@ -8,5 +8,5 @@ exports.createCity = async({name,state})=>{
 
     const result = await City.create({name:name,state:state})
 
-    return {status:200, message:"City created Succesfully ",data:result}
+    return {status:200, data:{message:"City created Succesfully ",data:result}}
 }

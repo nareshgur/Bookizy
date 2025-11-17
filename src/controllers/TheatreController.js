@@ -30,4 +30,17 @@ router.get("/", async (req,res)=>{
     }
 })
 
+router.get("/Theatres/:cityId",async (req,res)=>{
+    try{
+        const theatres = await Theatre.find({cityId:req.params.cityId})
+
+        if(!theatres) return res.status(404).send("No theatres are found for the given City")
+        
+        return res.status(200).send(theatres)
+    }catch(err){
+        console.log("SOmething went wrong while fetching the theatres at theatre controller ", err);
+            return res.status(500).send("Internal Server Error",err)
+    }
+})
+
 module.exports = router
