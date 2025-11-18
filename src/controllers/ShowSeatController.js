@@ -36,15 +36,33 @@ router.get("/ShowSeat/:showId", async (req, res) => {
 
 
 /** Block seats */
+// Block seats
 router.put("/ShowSeat/Block", async (req, res) => {
   try {
-    const { seatIds } = req.body;
-    const result = await blockSeats(seatIds);
+      
+      // accept either { "seatIds": ["id1", "id2"] } or { "seatId": "id" } (single)
+      console.log("The data we received at the Show Seat controller is ",req.body);
+      
+      let { seatIds, seatId, showId } = req.body;
+      console.log("The data we received at the Show Seat controller ",seatIds,seatId,showId);
+
+    if (!seatIds && seatId) seatIds = [seatId];
+
+    // defensive validation
+    if (!seatIds || (Array.isArray(seatIds) && seatIds.length === 0)) {
+      return res.status(400).send({ message: "seatIds (non-empty array) or seatId (single) required" });
+    }
+
+    // call service with optional showId (recommended)
+    const result = await blockSeats(seatIds, { showId });
+
     return res.status(result.status).send(result.data);
   } catch (err) {
+    console.error("Error in /ShowSeat/Block:", err);
     return res.status(500).send({ message: err.message });
   }
 });
+
 
 
 /** Book seats */

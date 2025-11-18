@@ -1,7 +1,7 @@
 const ShowSeat = require("../models/ShowSeat");
 const Seat = require("../models/Seat");
 const Show = require("../models/Show");
-
+const mongoose = require('mongoose')
 /**
  * Create ShowSeat entries for all seats in a screen for a show
  */
@@ -53,33 +53,81 @@ exports.getShowSeatsByShow = async (showId) => {
 /**
  * Block seats temporarily (during payment)
  */
-exports.blockSeats = async (seatIds) => {
-  const result = await ShowSeat.updateMany(
-    { _id: { $in: seatIds }, status: "AVAILABLE" },
-    { $set: { status: "BLOCKED" } }
-  );
+// exports.blockSeats = async (seatIds) => {
+//     console.log("The data received to the ShowSeat Service is",seatIds);
+    
+//   const result = await ShowSeat.updateMany(
+//     { _id: { $in: seatIds }, status: "AVAILABLE" },
+//     { $set: { status: "BLOCKED" } }
+//   );
 
-  return {
-    status: 200,
-    data: { message: "Seats blocked successfully" }
-  };
-};
+//   return {
+//     status: 200,
+//     data: { message: "Seats blocked successfully" }
+//   };
+// };
 
 
 /**
  * Confirm Booking (BOOK seats)
  */
-exports.bookSeats = async (seatIds) => {
-  const result = await ShowSeat.updateMany(
-    { _id: { $in: seatIds }, status: { $in: ["AVAILABLE", "BLOCKED"] } },
-    { $set: { status: "BOOKED" } }
-  );
+
+/**
+ * Block seats temporarily (during payment)
+ * Accepts: seatIds (array of showSeat _id strings) OR single id
+ */
+exports.blockSeats = async (seatIds, opts = {}) => {
+  // normalize
+
+
+  console.log("The data we received at the Show Service layer",seatIds,opts);
+  
+  if (!seatIds) throw new Error("seatIds required");
+  if (!Array.isArray(seatIds)) seatIds = [seatIds];
+
+  // filter out invalid/empty values
+  seatIds = seatIds.filter(Boolean);
+  if (seatIds.length === 0) throw new Error("seatIds must be a non-empty array");
+
+  // convert to ObjectId safely
+  const objIds = seatIds.map(id => {
+    if (mongoose.isValidObjectId(id)) return new mongoose.Types.ObjectId(id);
+    console.log("Invalid ObjectId:", id);
+    return null;
+  }).filter(Boolean);
+
+  console.log("The objIds after converting them into the ObjectId",objIds);
+  
+
+  if (objIds.length === 0) throw new Error("No valid ObjectId values found in seatIds");
+
+  // optional: allow passing showId to ensure we only update seats for that show
+  const { showId } = opts;
+  const query = { _id: { $in: objIds }, status: "AVAILABLE" };
+  if (showId) {
+    if (mongoose.isValidObjectId(showId)) query.showId = new mongoose.Types.ObjectId(showId);
+  }
+
+  const update = { $set: { status: "BLOCKED" } };
+
+  const result = await ShowSeat.updateMany(query, update);
+
+  console.log("The result we got after converting blocking seats",result);
+  
+
+  // robust result handling across mongoose versions
+  const modified = result.modifiedCount ?? result.nModified ?? 0;
 
   return {
-    status: 200,
-    data: { message: "Seats booked successfully" }
+    status: modified > 0 ? 200 : 409,
+    data: {
+      message: modified > 0 ? "Seats blocked successfully" : "No seats were blocked — they may already be blocked/booked or ids are invalid.",
+      modifiedCount: modified,
+      matchedCount: result.matchedCount ?? result.n ?? 0
+    }
   };
 };
+
 
 
 /**

@@ -6,6 +6,7 @@ const Theatre = require("../controllers/TheatreController")
 const Screen = require("../controllers/ScreenController")
 const Seat = require("../controllers/SeatController")
 const ShowSeat = require("../controllers/ShowSeatController")
+const Show = require("../controllers/ShowController")
 module.exports = function (app){
     app.use(express.json())
     app.use(express.urlencoded({extended:true}))
@@ -15,4 +16,5 @@ module.exports = function (app){
     app.use("/api/Screen",Screen)
     app.use("/api/Seat",Seat)
     app.use("/api/ShowSeat",ShowSeat)
+    app.use("/api/Shows",Show)
 }
