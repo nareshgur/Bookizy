@@ -37,39 +37,32 @@ router.get("/ShowSeat/:showId", async (req, res) => {
 
 /** Block seats */
 // Block seats
+// controllers/ShowSeatController.js
 router.put("/ShowSeat/Block", async (req, res) => {
   try {
-      
-      // accept either { "seatIds": ["id1", "id2"] } or { "seatId": "id" } (single)
-      console.log("The data we received at the Show Seat controller is ",req.body);
-      
-      let { seatIds, seatId, showId } = req.body;
-      console.log("The data we received at the Show Seat controller ",seatIds,seatId,showId);
+    let { showSeatIds } = req.body;
 
-    if (!seatIds && seatId) seatIds = [seatId];
-
-    // defensive validation
-    if (!seatIds || (Array.isArray(seatIds) && seatIds.length === 0)) {
-      return res.status(400).send({ message: "seatIds (non-empty array) or seatId (single) required" });
+    if (!showSeatIds) {
+      return res.status(400).send({ message: "showSeatIds required" });
     }
 
-    // call service with optional showId (recommended)
-    const result = await blockSeats(seatIds, { showId });
-
+    const result = await blockSeats(showSeatIds);
     return res.status(result.status).send(result.data);
+
   } catch (err) {
-    console.error("Error in /ShowSeat/Block:", err);
+    console.error("Block Error:", err);
     return res.status(500).send({ message: err.message });
   }
 });
 
 
 
+
 /** Book seats */
 router.put("/ShowSeat/Book", async (req, res) => {
   try {
-    const { seatIds } = req.body;
-    const result = await bookSeats(seatIds);
+    const { showSeatIds } = req.body;
+    const result = await bookSeats(showSeatIds);
     return res.status(result.status).send(result.data);
   } catch (err) {
     return res.status(500).send({ message: err.message });
@@ -80,8 +73,8 @@ router.put("/ShowSeat/Book", async (req, res) => {
 /** Release seats */
 router.put("/ShowSeat/Release", async (req, res) => {
   try {
-    const { seatIds } = req.body;
-    const result = await releaseSeats(seatIds);
+    const { showSeatIds } = req.body;
+    const result = await releaseSeats(showSeatIds);
     return res.status(result.status).send(result.data);
   } catch (err) {
     return res.status(500).send({ message: err.message });

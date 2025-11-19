@@ -6,6 +6,7 @@ const app = express()
 require('dotenv').config()
 require('./src/config/routes')(app)
 require('./src/config/db')()
+require('./cron')
 
 
 

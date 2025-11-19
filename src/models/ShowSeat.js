@@ -28,7 +28,9 @@ const ShowSeatSchema = new mongoose.Schema(
     price: {
       type: Number,
       required: true
-    }
+    },
+    blockedAt:Date,
+    blockedUntil:Date
   },
   { timestamps: true }
 );
