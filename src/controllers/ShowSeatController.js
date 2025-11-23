@@ -40,13 +40,13 @@ router.get("/ShowSeat/:showId", async (req, res) => {
 // controllers/ShowSeatController.js
 router.put("/ShowSeat/Block", async (req, res) => {
   try {
-    let { showSeatIds } = req.body;
+    let { showSeatIds,showId } = req.body;
 
     if (!showSeatIds) {
       return res.status(400).send({ message: "showSeatIds required" });
     }
 
-    const result = await blockSeats(showSeatIds);
+    const result = await blockSeats(showSeatIds,showId);
     return res.status(result.status).send(result.data);
 
   } catch (err) {

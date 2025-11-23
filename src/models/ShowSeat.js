@@ -25,10 +25,6 @@ const ShowSeatSchema = new mongoose.Schema(
       default: "AVAILABLE"
     },
 
-    price: {
-      type: Number,
-      required: true
-    },
     blockedAt:Date,
     blockedUntil:Date
   },

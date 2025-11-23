@@ -4,9 +4,9 @@ const JOI = require('joi')
 const User = mongoose.model("User",new mongoose.Schema({
     name:{
         type:String,
-        minglength:3,
+        minlength:3,
         maxlength:30,
-        require:true
+        required:true
     },
     email:{
         type:String,

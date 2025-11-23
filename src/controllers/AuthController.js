@@ -18,6 +18,8 @@ router.post("/register", async (req,res)=>{
 router.post("/login",async (req,res)=>{
     try{
         const result = await login(req.body)
+        console.log("The data received to the login controller ",req.body);
+        
         console.log("The login method is called with result",JSON.stringify(result));
         return res.header('x-auth-header',result.data.token).status(result.status).send({message:result.message,data:result.data})
         

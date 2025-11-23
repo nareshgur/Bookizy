@@ -31,7 +31,8 @@ exports.register = async (body)=>{
 
 exports.login = async ({email,Password}) =>{
     const user = await User.findOne({email:email})
-
+    console.log("The data we received to teh login service method is ",email,Password);
+    
     if(!user) return {status:400, data:"Invalid password or email"}
 
     const validPassword = await bcrypt.compare(Password,user.Password)

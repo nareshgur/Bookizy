@@ -1,18 +1,33 @@
 const Show = require("../models/Show");
-
+const axios = require('axios')
 /**
  * Create a new Show
  */
 exports.CreateShow = async (data) => {
+  const { movieId } = data;
+
+  const tmdb = await axios.get(
+    `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.TMDB_API_KEY}`
+  );
+
+  if(!tmdb.data) throw new Error("Invalid TMDB movieId")
+
+  const m = tmdb.data;
+
+  data.movieName = m.title;
+  data.moviePoster = "https://image.tmdb.org/t/p/w500" + m.poster_path;
+  data.movieGenres = m.genres.map(g => g.name);
+  data.movieLanguage = m.original_language;
+  data.movieRating = m.vote_average;
+
   const result = await Show.create(data);
+
   return {
     status: 200,
-    data: {
-      message: "Successfully created the Show",
-      data: result
-    }
+    data: { message: "Show created", data: result }
   };
 };
+
 
 
 /**

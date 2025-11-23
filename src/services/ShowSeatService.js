@@ -17,7 +17,6 @@ exports.createShowSeatForShow = async (showId, screenId) => {
     seatId: seat._id,
     seatNumber: seat.seatNumber,
     status: "AVAILABLE",
-    price: show.price
   }));
 
   const result = await ShowSeat.insertMany(showSeats);
@@ -78,17 +77,18 @@ exports.getShowSeatsByShow = async (showId) => {
  */
 // services/ShowSeatService.js
 
-exports.blockSeats = async (showSeatIds) => {
+exports.blockSeats = async (showSeatIds,showId) => {
   if (!Array.isArray(showSeatIds)) showSeatIds = [showSeatIds];
 
   const now = new Date();
-  const expires = new Date(now.getTime() + 60 * 1000); 
+  const expires = new Date(now.getTime() + 4 * 60 * 1000); 
 
   const validIds = showSeatIds.filter(id => mongoose.isValidObjectId(id));
 
   const result = await ShowSeat.updateMany(
     {
       _id: { $in: validIds },
+      showId,
       status: "AVAILABLE"
     },
     {

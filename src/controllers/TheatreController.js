@@ -15,9 +15,9 @@ router.post("/Theatre",async (req,res)=>{
     }
 })
 
-router.get("/", async (req,res)=>{
+router.get("/:TheatreName", async (req,res)=>{
     try{
-        const result = await Theatre.find()
+        const result = await Theatre.find({name:req.params.TheatreName})
         
         if(!result) return res.status(404).send("No Theatres found ")
 
@@ -39,7 +39,7 @@ router.get("/Theatres/:cityId",async (req,res)=>{
         return res.status(200).send(theatres)
     }catch(err){
         console.log("SOmething went wrong while fetching the theatres at theatre controller ", err);
-            return res.status(500).send("Internal Server Error",err)
+            return res.status(500).send({message:"Internal Server Error",error:err})
     }
 })
 

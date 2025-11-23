@@ -6,6 +6,11 @@ const ShowSchema = new mongoose.Schema(
       type: Number, // TMDB movie ID
       required: true
     },
+     movieName: String,
+    moviePoster: String,
+    movieGenres: [String],
+    movieLanguage: String,
+    movieRating: Number,
 
     theatreId: {
       type: mongoose.Schema.Types.ObjectId,
@@ -35,10 +40,7 @@ const ShowSchema = new mongoose.Schema(
       required: true
     },
 
-    price: {
-      type: Number,
-      required: true
-    }
+    
   },
   { timestamps: true }
 );
