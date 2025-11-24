@@ -19,6 +19,9 @@ router.get("/Movie/search", async (req, res) => {
 
 router.get("/Movies/City/:city", async (req, res) => {
   try {
+
+    console.log("The movies by city search controller is called ");
+    
     const result = await getMoviesByCity(req.params.city);
     console.log(
       "============The movie search is called ==============",
