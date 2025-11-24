@@ -8,9 +8,9 @@ const {
   getShowsByTheatre,
   getShowsByScreen,
   updateShow,
-  deleteShow
+  deleteShow,
 } = require("../services/ShowService");
-
+const { getMoviesByCity } = require("../services/MovieSearchService");
 
 /**
  * Create a Show
@@ -25,22 +25,27 @@ router.post("/Show", async (req, res) => {
   }
 });
 
-
 /**
  * Shows by City
  */
+// router.get("/Show/City/:city", async (req, res) => {
+//   try {
+//     const result = await getShowsByCity(req.params.city);
+//     return res.status(result.status).send(result.data.data);
+//   } catch (err) {
+//     console.log("Error fetching shows by city:", err);
+//     return res.status(500).send({ message: err.message });
+//   }
+// });
 router.get("/Show/City/:city", async (req, res) => {
   try {
-    const result = await getShowsByCity(req.params.city);
+    const result = await getMoviesByCity(req.params.city);
     return res.status(result.status).send(result.data.data);
   } catch (err) {
     console.log("Error fetching shows by city:", err);
     return res.status(500).send({ message: err.message });
   }
 });
-
-
-
 
 /**
  * Shows by Movie (TMDB ID)
@@ -55,7 +60,6 @@ router.get("/Show/Movie/:movieId", async (req, res) => {
   }
 });
 
-
 /**
  * Shows by Theatre
  */
@@ -68,7 +72,6 @@ router.get("/Show/Theatre/:theatreId", async (req, res) => {
     return res.status(500).send({ message: err.message });
   }
 });
-
 
 /**
  * Shows by Screen
@@ -83,7 +86,6 @@ router.get("/Show/Screen/:screenId", async (req, res) => {
   }
 });
 
-
 /**
  * Update Show
  */
@@ -97,7 +99,6 @@ router.put("/Show/:id", async (req, res) => {
   }
 });
 
-
 /**
  * Delete Show
  */
@@ -110,6 +111,5 @@ router.delete("/Show/:id", async (req, res) => {
     return res.status(500).send({ message: err.message });
   }
 });
-
 
 module.exports = router;

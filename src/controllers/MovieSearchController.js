@@ -1,4 +1,7 @@
-const { searchMovies } = require("../services/MovieSearchService");
+const {
+  searchMovies,
+  getMoviesByCity,
+} = require("../services/MovieSearchService");
 const express = require("express");
 const router = express.Router();
 
@@ -14,10 +17,14 @@ router.get("/Movie/search", async (req, res) => {
   }
 });
 
-
 router.get("/Movies/City/:city", async (req, res) => {
   try {
     const result = await getMoviesByCity(req.params.city);
+    console.log(
+      "============The movie search is called ==============",
+      result
+    );
+
     return res.status(200).send(result.data);
   } catch (err) {
     console.log("Error fetching movies by city:", err);
@@ -25,5 +32,4 @@ router.get("/Movies/City/:city", async (req, res) => {
   }
 });
 
-
-module.exports = router
+module.exports = router;
