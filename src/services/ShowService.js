@@ -133,3 +133,22 @@ exports.deleteShow = async (id) => {
     data: { message: "Show Deleted Successfully" }
   };
 };
+
+exports.getShowsByMovieCityDate = async (movieId, city, date) => {
+  const result = await Show.find({
+    movieId,
+    city,
+    date
+  });
+
+  if (result.length === 0)
+    throw new Error("No shows found for selected filters");
+
+  return {
+    status: 200,
+    data: {
+      message: "Filtered shows fetched",
+      data: result
+    }
+  };
+};

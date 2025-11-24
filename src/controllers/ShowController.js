@@ -8,6 +8,7 @@ const {
   getShowsByTheatre,
   getShowsByScreen,
   updateShow,
+  getShowsByMovieCityDate,  
   deleteShow,
 } = require("../services/ShowService");
 const { getMoviesByCity } = require("../services/MovieSearchService");
@@ -111,5 +112,25 @@ router.delete("/Show/:id", async (req, res) => {
     return res.status(500).send({ message: err.message });
   }
 });
+
+
+router.get("/Show/Filter", async (req, res) => {
+  try {
+    const { movieId, city, date } = req.query;
+
+    if (!movieId || !city || !date) {
+      return res.status(400).send({
+        message: "movieId, city, and date are required"
+      });
+    }
+
+    const result = await getShowsByMovieCityDate(movieId, city, date);
+    return res.status(result.status).send(result.data);
+  } catch (err) {
+    console.log("Error fetching filtered shows:", err);
+    return res.status(500).send({ message: err.message });
+  }
+});
+
 
 module.exports = router;
