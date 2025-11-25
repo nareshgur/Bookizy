@@ -26,7 +26,8 @@ exports.createRazorpayOrder = async ({ bookingId }) => {
     bookingId,
     razorpayOrderId: order.id,
     amount:booking.totalAmount,
-    status: "PENDING"
+    status: "PENDING",
+    key: order.key
   });
 
   return {
