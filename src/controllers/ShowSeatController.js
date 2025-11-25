@@ -41,6 +41,7 @@ router.get("/ShowSeat/:showId", async (req, res) => {
 router.put("/ShowSeat/Block", async (req, res) => {
   try {
     let { showSeatIds,showId } = req.body;
+    console.log("The data received to the ShowSeat Controller is",req.body);
 
     if (!showSeatIds) {
       return res.status(400).send({ message: "showSeatIds required" });
