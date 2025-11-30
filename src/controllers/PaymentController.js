@@ -1,7 +1,8 @@
 const express = require("express");
 const {
   createRazorpayOrder,
-  verifyPaymentAndConfirmBooking
+  verifyPaymentAndConfirmBooking,
+  cancelPaymentAndReleaseSeats
 } = require("../services/PaymentService");
 
 const router = express.Router();
@@ -24,6 +25,18 @@ router.post("/Payment/Verify", async (req, res) => {
   } catch (err) {
     console.log("Payment verify failed", err);
     return res.status(500).send({ message: err.message });
+  }
+});
+
+
+router.post("/cancel", async (req, res) => {
+  try {
+    // expecting { bookingId, paymentDbId }
+    const result = await cancelPaymentAndReleaseSeats(req.body);
+    return res.status(result.status).json(result.data);
+  } catch (err) {
+    console.error("cancel payment error:", err);
+    return res.status(500).json({ message: err.message || "Server error" });
   }
 });
 
