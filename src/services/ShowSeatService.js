@@ -20,7 +20,7 @@ exports.createShowSeatForShow = async (showId, screenId) => {
   }));
 
   const result = await ShowSeat.insertMany(showSeats);
-
+  await result.save();
   return {
     status: 200,
     data: {

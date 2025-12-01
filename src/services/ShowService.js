@@ -141,6 +141,13 @@ exports.getShowsByMovieCityDate = async (movieId, city, date) => {
     date
   });
 
+  console.log("The movieId received is",movieId);
+  console.log("The city received is",city);
+  console.log("The date received is",date);
+
+
+
+  console.log("The filtered shows are",result);
   if (result.length === 0)
     throw new Error("No shows found for selected filters");
 
