@@ -12,6 +12,7 @@ const {
   deleteShow,
 } = require("../services/ShowService");
 const { getMoviesByCity } = require("../services/MovieSearchService");
+const Show = require("../models/Show");
 
 /**
  * Create a Show
@@ -131,6 +132,58 @@ router.get("/Show/Filter", async (req, res) => {
     return res.status(500).send({ message: err.message });
   }
 });
+
+// Search movies & theatres
+router.get("/search", async (req, res) => {
+  try {
+    const { q, city } = req.query;
+
+
+    console.log("Search query:", q, "City filter:", city);
+
+    if (!q) return res.status(400).send({ message: "Search query is required" });
+
+    const query = {
+      $or: [
+        { movieName: { $regex: q, $options: "i" } },
+        { movieLanguage: { $regex: q, $options: "i" } },
+        { movieGenres: { $elemMatch: { $regex: q, $options: "i" } } }
+      ]
+    };
+
+    // Optional filter if city is selected
+    if (city) {
+      query.city = city;
+    }
+
+    const shows = await Show.find(query)
+      .populate("theatreId", "name location");
+
+    const results = shows.map((show) => ({
+      movieId: show.movieId,
+      movieName: show.movieName,
+      moviePoster: show.moviePoster,
+      movieLanguage: show.movieLanguage,
+      movieGenres: show.movieGenres,
+      theatreName: show.theatreId?.name,
+      theatreLocation: show.theatreId?.location,
+      showId: show._id,
+      screenId: show.screenId,
+      city: show.city,
+      startTime: show.startTime,
+      date: show.date
+    }));
+
+
+    console.log(`Search found ${results.length} shows matching query "${q}"${city ? " in city " + city : ""}`);
+
+    return res.status(200).send({ data: results });
+  } catch (err) {
+    console.log("Search Error:", err);
+    return res.status(500).send({ message: "Internal Server Error" });
+  }
+});
+
 
 
 module.exports = router;
