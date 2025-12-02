@@ -41,7 +41,7 @@ router.get("/Theatres/id/:theatreId",async (req,res)=>{
     try{
         const theatres = await Theatre.findById(req.params.theatreId)
         console.log("Theatres found are : ", theatres);
-        if(theatres.length===0) return res.status(404).send("No theatres are found for the given City")
+        if(theatres?.length===0) return res.status(404).send("No theatres are found for the given City")
         
         return res.status(200).send(theatres)
     }catch(err){

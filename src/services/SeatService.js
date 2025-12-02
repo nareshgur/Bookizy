@@ -10,11 +10,11 @@ exports.createSeat = async(data)=>{
 
 exports.createManySeats = async (data)=>{
     try {
-        console.log("=== SeatService.createManySeats START ===");
+        console.log("Data to insert:", data);
         console.log("MongoDB connection state:", mongoose.connection.readyState); // 0=disconnected, 1=connected
         console.log("MongoDB database:", mongoose.connection.db?.databaseName);
         console.log("Inserting", data.length, "seats...");
-        
+        console.log("Screen ID for first seat:", data[0]?.screenId);
         // Insert with explicit options
         const result = await Seat.insertMany(data, { 
             ordered: false,

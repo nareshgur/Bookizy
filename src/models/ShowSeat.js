@@ -31,4 +31,12 @@ const ShowSeatSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+ShowSeatSchema.index(
+  { showId: 1, seatId: 1 },
+  { unique: true }
+);
+
+
 module.exports = mongoose.model("ShowSeat", ShowSeatSchema);
+
+

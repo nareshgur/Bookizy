@@ -6,21 +6,28 @@ const mongoose = require('mongoose')
  * Create ShowSeat entries for all seats in a screen for a show
  */
 exports.createShowSeatForShow = async (showId, screenId) => {
-  const show = await Show.findById(showId);
+  const existing = await ShowSeat.find({ showId }).countDocuments();
+
+  if (existing > 0) {
+    return {
+      status: 200,
+      data: {
+        message: "ShowSeats already exist — skipping creation",
+      }
+    };
+  }
+
   const seats = await Seat.find({ screenId });
 
-  if (!show) throw new Error("Show not found");
-  if (seats.length === 0) throw new Error("No seats found for this screen");
-
-  const showSeats = seats.map((seat) => ({
+  const showSeats = seats.map(seat => ({
     showId,
     seatId: seat._id,
     seatNumber: seat.seatNumber,
-    status: "AVAILABLE",
+    status: "AVAILABLE"
   }));
 
   const result = await ShowSeat.insertMany(showSeats);
-  await result.save();
+
   return {
     status: 200,
     data: {
@@ -31,10 +38,13 @@ exports.createShowSeatForShow = async (showId, screenId) => {
 };
 
 
+
 /**
  * Get all ShowSeats for a show
  */
 exports.getShowSeatsByShow = async (showId) => {
+
+  console.log("Fetching ShowSeats for showId:", showId);
   const result = await ShowSeat.find({ showId }).sort({ seatNumber: 1 });
 
   if (result.length === 0) throw new Error("No ShowSeats found for this show");

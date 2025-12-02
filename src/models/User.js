@@ -1,33 +1,18 @@
-const mongoose = require("mongoose")
-const JOI = require('joi')
+// models/User.js
+const mongoose = require("mongoose");
 
-const User = mongoose.model("User",new mongoose.Schema({
-    name:{
-        type:String,
-        minlength:3,
-        maxlength:30,
-        required:true
-    },
-    email:{
-        type:String,
-        minlength:10,
-        maxlength:50,
-        unique:true,
-        required:true
-    },
-    phone:{
-        type:String,
-        required:true,
-        minlength:6,
-        maxlength:20,
-    },
-    Password:{
-        type:String,
-        minlength:8,
-        maxlength:100,
-        required:true
-    }
-}))
+const UserSchema = new mongoose.Schema({
+  name: { type: String, required: true, trim: true },
+  email: { type: String, required: true, lowercase: true, unique: true },
+  phone: { type: String, required: true, unique: true },
+  Password: { type: String, required: true }, // hashed
+}, { timestamps: true });
 
+// remove password from returned objects
+UserSchema.methods.toJSON = function () {
+  const obj = this.toObject();
+  delete obj.Password;
+  return obj;
+};
 
-exports.User = User;
+module.exports = mongoose.model("User", UserSchema);

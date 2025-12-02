@@ -17,8 +17,9 @@ router.post("/Seat",async(req,res)=>{
 })
 
 router.post("/Seats", async (req,res)=>{
-    console.log("\n=== POST /Seats START ===");
+    // console.log("\n=== POST /Seats START ===");
     console.log("Controller received", req.body.length, "seats");
+    console.log("data received:", req.body);
     try{
         const result = await createManySeats(req.body)
         console.log("=== POST /Seats END (SUCCESS) ===\n");
