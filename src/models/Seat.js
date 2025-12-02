@@ -6,11 +6,13 @@ const SeatSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Screen",
       required: true,
+      
     },
 
     seatNumber: {
       type: String, // A1, A2, B5, etc.
       required: true,
+
     },
 
     row: {
@@ -37,3 +39,12 @@ const SeatSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("Seat", SeatSchema);
+
+SeatSchema.index(
+  { screenId: 1, row: 1, col: 1 },
+  { unique: true }
+);
+SeatSchema.index(
+  { screenId: 1, seatNumber: 1 },
+  { unique: true }
+);
