@@ -4,6 +4,7 @@ const {
   verifyPaymentAndConfirmBooking,
   cancelPaymentAndReleaseSeats
 } = require("../services/PaymentService");
+const auth = require("../middleware/AuthMiddleware");
 
 const router = express.Router();
 
