@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const logger = require("../utils/logger");
 const {Theatre} = require("../models/Theatre");
 const {
   CreateShow,
@@ -20,9 +21,10 @@ const Show = require("../models/Show");
 router.post("/Show", async (req, res) => {
   try {
     const result = await CreateShow(req.body);
+    logger.info("Show created successfully", { movieId: req.body.movieId, theatreId: req.body.theatreId });
     return res.status(result.status).send(result.data);
   } catch (err) {
-    console.log("Error creating show:", err);
+    logger.error("Error creating show", { error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -55,9 +57,10 @@ router.get("/Show/City/:city", async (req, res) => {
 router.get("/Show/Movie/:movieId", async (req, res) => {
   try {
     const result = await getShowsByMovie(req.params.movieId);
+    logger.info("Fetched shows by movie", { movieId: req.params.movieId, count: result.data.data?.length || 0 });
     return res.status(result.status).send(result.data.data);
   } catch (err) {
-    console.log("Error fetching shows by movie:", err);
+    logger.error("Error fetching shows by movie", { movieId: req.params.movieId, error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -68,9 +71,10 @@ router.get("/Show/Movie/:movieId", async (req, res) => {
 router.get("/Show/Theatre/:theatreId", async (req, res) => {
   try {
     const result = await getShowsByTheatre(req.params.theatreId);
+    logger.info("Fetched shows by theatre", { theatreId: req.params.theatreId, count: result.data.data?.length || 0 });
     return res.status(result.status).send(result.data.data);
   } catch (err) {
-    console.log("Error fetching shows by theatre:", err);
+    logger.error("Error fetching shows by theatre", { theatreId: req.params.theatreId, error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -81,9 +85,10 @@ router.get("/Show/Theatre/:theatreId", async (req, res) => {
 router.get("/Show/Screen/:screenId", async (req, res) => {
   try {
     const result = await getShowsByScreen(req.params.screenId);
+    logger.info("Fetched shows by screen", { screenId: req.params.screenId, count: result.data.data?.length || 0 });
     return res.status(result.status).send(result.data.data);
   } catch (err) {
-    console.log("Error fetching shows by screen:", err);
+    logger.error("Error fetching shows by screen", { screenId: req.params.screenId, error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -94,9 +99,10 @@ router.get("/Show/Screen/:screenId", async (req, res) => {
 router.put("/Show/:id", async (req, res) => {
   try {
     const result = await updateShow(req.params.id, req.body);
+    logger.info("Show updated successfully", { showId: req.params.id });
     return res.status(result.status).send(result.data.data);
   } catch (err) {
-    console.log("Error updating show:", err);
+    logger.error("Error updating show", { showId: req.params.id, error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -107,9 +113,10 @@ router.put("/Show/:id", async (req, res) => {
 router.delete("/Show/:id", async (req, res) => {
   try {
     const result = await deleteShow(req.params.id);
+    logger.info("Show deleted successfully", { showId: req.params.id });
     return res.status(result.status).send(result.data);
   } catch (err) {
-    console.log("Error deleting show:", err);
+    logger.error("Error deleting show", { showId: req.params.id, error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -118,6 +125,7 @@ router.delete("/Show/:id", async (req, res) => {
 router.get("/Show/Filter", async (req, res) => {
   try {
     const { movieId, city, date } = req.query;
+    logger.info("Show filter request received", { movieId, city, date });
 
     if (!movieId || !city || !date) {
       return res.status(400).send({
@@ -126,9 +134,10 @@ router.get("/Show/Filter", async (req, res) => {
     }
 
     const result = await getShowsByMovieCityDate(movieId, city, date);
+    logger.info("Filtered shows fetched", { movieId, city, date, count: result.data?.length || 0 });
     return res.status(result.status).send(result.data);
   } catch (err) {
-    console.log("Error fetching filtered shows:", err);
+    logger.error("Error fetching filtered shows", { error: err.message });
     return res.status(500).send({ message: err.message });
   }
 });
@@ -137,13 +146,16 @@ router.get("/Show/Filter", async (req, res) => {
 router.get("/search", async (req, res) => {
   try {
     const { q, city } = req.query;
-
-
-    console.log("Search query:", q, "City filter:", city);
+    logger.info("Show search request received", { query: q, city });
 
     if (!q) return res.status(400).send({ message: "Search query is required" });
 
+    // Get today's date in YYYY-MM-DD format
+    const today = new Date();
+    const todayString = today.toISOString().split('T')[0];
+
     const query = {
+      date: { $gte: todayString }, // Only future/today's shows
       $or: [
         { movieName: { $regex: q, $options: "i" } },
         { movieLanguage: { $regex: q, $options: "i" } },
@@ -157,7 +169,8 @@ router.get("/search", async (req, res) => {
     }
 
     const shows = await Show.find(query)
-      .populate("theatreId", "name location");
+      .populate("theatreId", "name location")
+      .sort({ date: 1, startTime: 1 });
 
     const results = shows.map((show) => ({
       movieId: show.movieId,
@@ -174,12 +187,10 @@ router.get("/search", async (req, res) => {
       date: show.date
     }));
 
-
-    console.log(`Search found ${results.length} shows matching query "${q}"${city ? " in city " + city : ""}`);
-
+    logger.info(`Show search found results`, { query: q, city, resultCount: results.length });
     return res.status(200).send({ data: results });
   } catch (err) {
-    console.log("Search Error:", err);
+    logger.error("Show search error", { query: req.query.q, error: err.message });
     return res.status(500).send({ message: "Internal Server Error" });
   }
 });
@@ -189,13 +200,18 @@ router.get("/unified-search", async (req, res) => {
   try {
     const { q, city } = req.query;
 
-    console.log("Unified Search Query:", q, "City:", city);
+    logger.info("Unified search request", { query: q, city });
 
     if (!q) return res.status(400).send({ message: "Search query is required" });
     if (!city) return res.status(400).send({ message: "City is required" });
 
-    // --- SEARCH MOVIES ---
+    // Get today's date in YYYY-MM-DD format
+    const today = new Date();
+    const todayString = today.toISOString().split('T')[0]; // Format: "2025-12-04"
+
+    // --- SEARCH MOVIES (with future date filter) ---
     const movies = await Show.find({
+      date: { $gte: todayString }, // Only shows from today onwards
       $or: [
         { movieName: { $regex: q, $options: "i" } },
         { movieLanguage: { $regex: q, $options: "i" } },
@@ -203,14 +219,15 @@ router.get("/unified-search", async (req, res) => {
       ]
     })
       .populate("theatreId", "name cityId") // Important: gives us the theatre's cityId
-      .lean();
+      .lean()
+      .sort({ date: 1, startTime: 1 }); // Sort by date and time ascending
 
     // Filter movies ONLY from the provided cityId
     const filteredMovies = movies.filter(
       (m) => m.theatreId && m.theatreId.cityId.toString() === city
     );
 
-    console.log("Filtered movies details is :", filteredMovies);
+    logger.info("Unified search results", { query: q, city, movieCount: filteredMovies.length });
 
     // --- SEARCH THEATRES ---
     const theatres = await Theatre.find({
@@ -224,11 +241,12 @@ router.get("/unified-search", async (req, res) => {
     return res.status(200).send({
       status: 200,
       movies: filteredMovies,
-      theatres
+      theatres,
+      message: `Found ${filteredMovies.length} upcoming movies and ${theatres.length} theatres`
     });
 
   } catch (err) {
-    console.log("Unified Search Error:", err);
+    logger.error("Unified search error", { error: err.message });
     res.status(500).send({ status: 500, message: "Internal Server Error" });
   }
 });

@@ -1,0 +1,517 @@
+{"email":"rameshgurrala37@gmail.com","level":"info","message":"User login successful","timestamp":"2025-12-04T09:31:09.646Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1196348","timestamp":"2025-12-04T10:08:11.688Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1196348","timestamp":"2025-12-04T10:08:11.731Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:08:15.486Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:16.998Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:17.026Z"}
+{"count":2,"level":"info","message":"Block seats request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:19.567Z"}
+{"count":2,"level":"info","message":"Seats blocked successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:19.605Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:19.699Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:19.717Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:08:19.724Z"}
+{"bookingId":"69315d935232160593f113c4","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:08:19.812Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:08:19.865Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:08:21.007Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T10:09:14.807Z"}
+{"level":"info","message":"Payment verified and booking confirmed","timestamp":"2025-12-04T10:09:15.707Z"}
+{"bookingId":"69315d935232160593f113c4","level":"info","message":"Booking details retrieved","timestamp":"2025-12-04T10:09:16.175Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:09:16.333Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:09:16.366Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T10:12:28.336Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1142921","timestamp":"2025-12-04T10:12:28.383Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:12:30.417Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:31.452Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:31.483Z"}
+{"count":1,"level":"info","message":"Block seats request received","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:35.240Z"}
+{"count":1,"level":"info","message":"Seats blocked successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:35.282Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:35.325Z","userId":"6918596d088f8d3eb0f36d00"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:35.335Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:12:35.362Z"}
+{"bookingId":"69315e9320bce4c518ab7bcd","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:12:35.421Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:12:35.516Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:12:35.720Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T10:18:02.306Z"}
+{"error":"Payment received but seats are no longer available. Refund will be processed.","level":"error","message":"Payment verification failed","timestamp":"2025-12-04T10:18:03.078Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T10:18:57.876Z"}
+{"error":"Payment received but seats are no longer available. Refund will be processed.","level":"error","message":"Payment verification failed","timestamp":"2025-12-04T10:18:58.692Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1196348","timestamp":"2025-12-04T10:20:57.517Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1196348","timestamp":"2025-12-04T10:20:57.561Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:20:57.849Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:20:58.747Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:20:58.777Z"}
+{"count":1,"level":"info","message":"Block seats request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:21:01.024Z"}
+{"count":1,"level":"info","message":"Seats blocked successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:21:01.063Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:21:01.115Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:21:01.142Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:21:01.216Z","userId":"6918596d088f8d3eb0f36d00"}
+{"bookingId":"6931608df70f8f2423c50a5f","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:21:01.297Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:21:01.440Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:21:01.698Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T10:25:40.525Z"}
+{"error":"Payment received but seats are no longer available. Refund will be processed.","level":"error","message":"Payment verification failed","timestamp":"2025-12-04T10:25:41.359Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:28:23.648Z"}
+{"count":1,"level":"info","message":"Block seats request received","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:28:33.425Z"}
+{"count":1,"level":"info","message":"Seats blocked successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:28:33.464Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:28:33.519Z","userId":"6918596d088f8d3eb0f36d00"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:28:33.537Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T10:28:33.570Z"}
+{"bookingId":"69316251f70f8f2423c50a74","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:28:33.628Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:28:33.776Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:28:33.994Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T10:30:14.392Z"}
+{"error":"Payment received but seats are no longer available. Refund will be processed.","level":"error","message":"Payment verification failed","timestamp":"2025-12-04T10:30:15.156Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:32:46.350Z"}
+{"count":1,"level":"info","message":"Block seats request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:32:55.000Z"}
+{"count":1,"level":"info","message":"Seats blocked successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:32:55.046Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:32:55.086Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:32:55.095Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:32:55.113Z"}
+{"bookingId":"69316357f70f8f2423c50a86","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:32:55.179Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:32:55.320Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:32:55.563Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:38:28.413Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T10:39:24.926Z"}
+{"city":"Hyderabad","count":10,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T10:39:25.039Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1196348","timestamp":"2025-12-04T10:39:30.885Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1196348","timestamp":"2025-12-04T10:39:30.925Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:39:31.403Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:32.745Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:32.786Z"}
+{"count":1,"level":"info","message":"Block seats request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:37.732Z"}
+{"count":1,"level":"info","message":"Seats blocked successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:37.774Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:37.859Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:37.887Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:39:37.909Z","userId":"6918596d088f8d3eb0f36d00"}
+{"bookingId":"693164e9eddbc68a729a0a07","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:39:38.014Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:39:38.072Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:39:38.324Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T10:43:02.581Z"}
+{"city":"Hyderabad","count":10,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T10:43:02.647Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1196348","timestamp":"2025-12-04T10:43:13.556Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1196348","timestamp":"2025-12-04T10:43:13.599Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T10:43:13.916Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:15.109Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:15.156Z"}
+{"count":2,"level":"info","message":"Block seats request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:24.063Z"}
+{"count":2,"level":"info","message":"Seats blocked successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:24.123Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:24.250Z","userId":"6918596d088f8d3eb0f36d00"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:24.266Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T10:43:24.296Z"}
+{"bookingId":"693165cceddbc68a729a0a18","level":"info","message":"Pending booking created","timestamp":"2025-12-04T10:43:24.359Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T10:43:24.528Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T10:43:24.834Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T10:45:46.677Z"}
+{"error":"Payment received but seats are no longer available. Refund will be processed.","level":"error","message":"Payment verification failed","timestamp":"2025-12-04T10:45:47.512Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T11:44:11.464Z"}
+{"city":"Hyderabad","count":10,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T11:44:11.563Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T11:53:36.570Z"}
+{"city":"Hyderabad","count":10,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T11:53:36.680Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1407437","timestamp":"2025-12-04T11:56:33.667Z"}
+{"error":"No shows found for selected filters","level":"error","message":"Error fetching filtered shows","timestamp":"2025-12-04T11:56:33.697Z"}
+{"city":"Hyderabad","date":"2025-12-05","level":"info","message":"Show filter request received","movieId":"1407437","timestamp":"2025-12-04T11:56:35.225Z"}
+{"error":"No shows found for selected filters","level":"error","message":"Error fetching filtered shows","timestamp":"2025-12-04T11:56:35.249Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T11:56:52.955Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T11:56:52.985Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T11:56:55.375Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T11:56:55.401Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:00:31.033Z"}
+{"error":"Operation `showseats.find()` buffering timed out after 10000ms","level":"error","message":"Error fetching ShowSeats","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:00:41.054Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T12:14:22.014Z"}
+{"city":"Hyderabad","count":2,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T12:14:22.511Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:14:39.411Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:14:39.527Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Te","timestamp":"2025-12-04T12:14:40.511Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"Te","timestamp":"2025-12-04T12:14:40.571Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ter","timestamp":"2025-12-04T12:14:40.846Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Ter","timestamp":"2025-12-04T12:14:40.902Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Tera","timestamp":"2025-12-04T12:14:40.922Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Tera","timestamp":"2025-12-04T12:14:40.959Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ter","timestamp":"2025-12-04T12:14:41.450Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Ter","timestamp":"2025-12-04T12:14:41.509Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Tere","timestamp":"2025-12-04T12:14:41.623Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Tere","timestamp":"2025-12-04T12:14:41.676Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T12:14:47.554Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1142921","timestamp":"2025-12-04T12:14:47.584Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:14:48.084Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:14:56.276Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:14:56.334Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AN","timestamp":"2025-12-04T12:14:56.479Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AN","timestamp":"2025-12-04T12:14:56.533Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"ANd","timestamp":"2025-12-04T12:14:56.607Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"ANd","timestamp":"2025-12-04T12:14:56.634Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"ANdh","timestamp":"2025-12-04T12:14:56.740Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"ANdh","timestamp":"2025-12-04T12:14:56.771Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"ANdhr","timestamp":"2025-12-04T12:14:56.830Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"ANdhr","timestamp":"2025-12-04T12:14:56.860Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"ANdh","timestamp":"2025-12-04T12:14:57.998Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"ANdh","timestamp":"2025-12-04T12:14:58.022Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"ANd","timestamp":"2025-12-04T12:14:58.192Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"ANd","timestamp":"2025-12-04T12:14:58.217Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AN","timestamp":"2025-12-04T12:14:58.569Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AN","timestamp":"2025-12-04T12:14:58.625Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:14:58.869Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:14:58.918Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"An","timestamp":"2025-12-04T12:15:00.576Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"An","timestamp":"2025-12-04T12:15:00.624Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"And","timestamp":"2025-12-04T12:15:01.424Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"And","timestamp":"2025-12-04T12:15:01.449Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andh","timestamp":"2025-12-04T12:15:01.635Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andh","timestamp":"2025-12-04T12:15:01.658Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andhr","timestamp":"2025-12-04T12:15:01.739Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andhr","timestamp":"2025-12-04T12:15:01.765Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andhra","timestamp":"2025-12-04T12:15:01.968Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andhra","timestamp":"2025-12-04T12:15:01.992Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andhr","timestamp":"2025-12-04T12:15:02.822Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andhr","timestamp":"2025-12-04T12:15:02.847Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andh","timestamp":"2025-12-04T12:15:02.958Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andh","timestamp":"2025-12-04T12:15:02.983Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"And","timestamp":"2025-12-04T12:15:03.108Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"And","timestamp":"2025-12-04T12:15:03.133Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"An","timestamp":"2025-12-04T12:15:03.259Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"An","timestamp":"2025-12-04T12:15:03.308Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:15:03.426Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:15:03.476Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:15:07.146Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:15:07.200Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:15:07.317Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:15:07.371Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:15:07.382Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:15:07.435Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The ","timestamp":"2025-12-04T12:15:07.609Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The ","timestamp":"2025-12-04T12:15:07.659Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:15:09.527Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:15:09.579Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:15:09.674Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:15:09.727Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:15:09.920Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:15:09.967Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:15:15.869Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:15:15.924Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:15:16.076Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:15:16.127Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AMV","timestamp":"2025-12-04T12:15:16.507Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"AMV","timestamp":"2025-12-04T12:15:16.534Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:15:17.037Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:15:17.088Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AMB","timestamp":"2025-12-04T12:15:17.269Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"AMB","timestamp":"2025-12-04T12:15:17.297Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:20.882Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:20.917Z"}
+{"count":3,"level":"info","message":"Block seats request received","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:31.599Z"}
+{"count":3,"level":"info","message":"Seats blocked successfully","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:31.641Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:31.735Z","userId":"6918596d088f8d3eb0f36d00"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:31.739Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692d70e84fee50f13c1382a7","timestamp":"2025-12-04T12:15:31.768Z"}
+{"bookingId":"69317b633cf957e9ca8217dd","level":"info","message":"Pending booking created","timestamp":"2025-12-04T12:15:31.855Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T12:15:31.926Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T12:15:33.208Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:18:08.489Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:18:08.546Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:18:08.678Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:18:08.689Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:18:10.192Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:18:10.314Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:18:10.692Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:18:10.783Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AMB","timestamp":"2025-12-04T12:18:10.983Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"AMB","timestamp":"2025-12-04T12:18:11.027Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:21.157Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:21.223Z"}
+{"count":2,"level":"info","message":"Block seats request received","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:33.501Z"}
+{"count":2,"level":"info","message":"Seats blocked successfully","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:33.575Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:33.725Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:33.761Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692d70f34fee50f13c1382aa","timestamp":"2025-12-04T12:18:33.769Z"}
+{"bookingId":"69317c193cf957e9ca821800","level":"info","message":"Pending booking created","timestamp":"2025-12-04T12:18:33.893Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T12:18:34.082Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T12:18:34.417Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T12:29:23.829Z"}
+{"city":"Hyderabad","error":"Operation `shows.find()` buffering timed out after 10000ms","level":"error","message":"Error fetching movies by city","timestamp":"2025-12-04T12:29:33.957Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T12:33:43.015Z"}
+{"city":"Hyderabad","count":2,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T12:33:43.153Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:33:52.134Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:33:52.259Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:33:53.107Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:33:53.174Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AMB","timestamp":"2025-12-04T12:33:53.921Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"AMB","timestamp":"2025-12-04T12:33:53.949Z"}
+{"level":"info","message":"Theatre details retrieved","screenCount":2,"showCount":0,"theatreId":"692d633469b7affc8c08340a","timestamp":"2025-12-04T12:33:57.267Z"}
+{"error":"theatre is not defined","level":"error","message":"Error fetching theatre details","theatreId":"692d633469b7affc8c08340a","timestamp":"2025-12-04T12:33:57.269Z"}
+{"level":"info","message":"Theatre details retrieved","screenCount":2,"showCount":0,"theatreId":"692d633469b7affc8c08340a","timestamp":"2025-12-04T12:34:01.155Z"}
+{"error":"theatre is not defined","level":"error","message":"Error fetching theatre details","theatreId":"692d633469b7affc8c08340a","timestamp":"2025-12-04T12:34:01.155Z"}
+{"level":"info","message":"Theatre details retrieved","screenCount":2,"showCount":0,"theatreId":"69198b6bca793e4a6fddeb2d","timestamp":"2025-12-04T12:34:07.708Z"}
+{"error":"theatre is not defined","level":"error","message":"Error fetching theatre details","theatreId":"69198b6bca793e4a6fddeb2d","timestamp":"2025-12-04T12:34:07.708Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:34:10.536Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:34:10.603Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:34:10.692Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:34:10.747Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"C","timestamp":"2025-12-04T12:34:11.490Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"C","timestamp":"2025-12-04T12:34:11.561Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ci","timestamp":"2025-12-04T12:34:11.891Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Ci","timestamp":"2025-12-04T12:34:11.931Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cin","timestamp":"2025-12-04T12:34:12.288Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cin","timestamp":"2025-12-04T12:34:12.321Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine","timestamp":"2025-12-04T12:34:12.417Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cine","timestamp":"2025-12-04T12:34:12.451Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinep","timestamp":"2025-12-04T12:34:13.196Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinep","timestamp":"2025-12-04T12:34:13.231Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinepo","timestamp":"2025-12-04T12:34:13.308Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinepo","timestamp":"2025-12-04T12:34:13.339Z"}
+{"level":"info","message":"Theatre details retrieved","screenCount":2,"showCount":2,"theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:34:15.668Z"}
+{"error":"theatre is not defined","level":"error","message":"Error fetching theatre details","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:34:15.668Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinep","timestamp":"2025-12-04T12:34:21.317Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinep","timestamp":"2025-12-04T12:34:21.351Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine","timestamp":"2025-12-04T12:34:21.594Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cine","timestamp":"2025-12-04T12:34:21.624Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cin","timestamp":"2025-12-04T12:34:21.802Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cin","timestamp":"2025-12-04T12:34:21.833Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ci","timestamp":"2025-12-04T12:34:22.054Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Ci","timestamp":"2025-12-04T12:34:22.087Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"C","timestamp":"2025-12-04T12:34:22.275Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"C","timestamp":"2025-12-04T12:34:22.343Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:34:24.540Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:34:24.610Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Te","timestamp":"2025-12-04T12:34:24.875Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"Te","timestamp":"2025-12-04T12:34:24.952Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ter","timestamp":"2025-12-04T12:34:24.960Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Ter","timestamp":"2025-12-04T12:34:25.061Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Tere","timestamp":"2025-12-04T12:34:25.160Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Tere","timestamp":"2025-12-04T12:34:25.243Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T12:34:37.679Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1142921","timestamp":"2025-12-04T12:34:37.727Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:34:38.622Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:34:53.741Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:34:53.778Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ter","timestamp":"2025-12-04T12:34:58.815Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Ter","timestamp":"2025-12-04T12:34:58.880Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Te","timestamp":"2025-12-04T12:34:59.091Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:34:59.130Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"Te","timestamp":"2025-12-04T12:34:59.143Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:34:59.181Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:34:59.706Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:34:59.753Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:34:59.887Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:34:59.938Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:35:00.066Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:35:00.124Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The ","timestamp":"2025-12-04T12:35:00.251Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The ","timestamp":"2025-12-04T12:35:00.256Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The ","timestamp":"2025-12-04T12:35:00.301Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The ","timestamp":"2025-12-04T12:35:00.304Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The G","timestamp":"2025-12-04T12:35:00.569Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The G","timestamp":"2025-12-04T12:35:00.621Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Gi","timestamp":"2025-12-04T12:35:00.784Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The Gi","timestamp":"2025-12-04T12:35:00.832Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Gir","timestamp":"2025-12-04T12:35:00.890Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The Gir","timestamp":"2025-12-04T12:35:00.943Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Girl","timestamp":"2025-12-04T12:35:01.457Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The Girl","timestamp":"2025-12-04T12:35:01.506Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1196348","timestamp":"2025-12-04T12:35:05.891Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1196348","timestamp":"2025-12-04T12:35:05.919Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:35:06.486Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Gir","timestamp":"2025-12-04T12:35:09.656Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The Gir","timestamp":"2025-12-04T12:35:09.799Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Gi","timestamp":"2025-12-04T12:35:09.840Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The Gi","timestamp":"2025-12-04T12:35:09.936Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The G","timestamp":"2025-12-04T12:35:09.975Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The G","timestamp":"2025-12-04T12:35:10.075Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The ","timestamp":"2025-12-04T12:35:10.092Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:35:10.227Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The ","timestamp":"2025-12-04T12:35:10.231Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:35:10.354Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:35:10.356Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:35:10.471Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:35:10.492Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:35:10.586Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:35:10.989Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:35:11.058Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"An","timestamp":"2025-12-04T12:35:11.220Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"An","timestamp":"2025-12-04T12:35:11.297Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"And","timestamp":"2025-12-04T12:35:11.303Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"And","timestamp":"2025-12-04T12:35:11.353Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andj","timestamp":"2025-12-04T12:35:11.835Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andjh","timestamp":"2025-12-04T12:35:11.842Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andjh","timestamp":"2025-12-04T12:35:11.895Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andj","timestamp":"2025-12-04T12:35:11.911Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andjhr","timestamp":"2025-12-04T12:35:11.956Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andjhr","timestamp":"2025-12-04T12:35:11.984Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andjhra","timestamp":"2025-12-04T12:35:12.084Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andjhra","timestamp":"2025-12-04T12:35:12.134Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andjhr","timestamp":"2025-12-04T12:35:12.402Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andjhr","timestamp":"2025-12-04T12:35:12.437Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andjh","timestamp":"2025-12-04T12:35:12.533Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andjh","timestamp":"2025-12-04T12:35:12.574Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andj","timestamp":"2025-12-04T12:35:12.656Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andj","timestamp":"2025-12-04T12:35:12.696Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"And","timestamp":"2025-12-04T12:35:12.784Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"And","timestamp":"2025-12-04T12:35:12.812Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andh","timestamp":"2025-12-04T12:35:13.024Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andh","timestamp":"2025-12-04T12:35:13.054Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andhr","timestamp":"2025-12-04T12:35:13.308Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andhr","timestamp":"2025-12-04T12:35:13.351Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andhra","timestamp":"2025-12-04T12:35:13.387Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andhra","timestamp":"2025-12-04T12:35:13.441Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andhr","timestamp":"2025-12-04T12:35:13.855Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andhr","timestamp":"2025-12-04T12:35:13.885Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Andh","timestamp":"2025-12-04T12:35:13.995Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Andh","timestamp":"2025-12-04T12:35:14.036Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"And","timestamp":"2025-12-04T12:35:14.141Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"And","timestamp":"2025-12-04T12:35:14.177Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"An","timestamp":"2025-12-04T12:35:14.291Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"An","timestamp":"2025-12-04T12:35:14.372Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:35:14.420Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:35:14.487Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:35:26.036Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:35:26.044Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:35:26.047Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The ","timestamp":"2025-12-04T12:35:26.068Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The ","timestamp":"2025-12-04T12:35:26.134Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:35:26.142Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:35:26.167Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:35:26.174Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The E","timestamp":"2025-12-04T12:35:27.170Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The E","timestamp":"2025-12-04T12:35:27.214Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Ep","timestamp":"2025-12-04T12:35:27.490Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Ep","timestamp":"2025-12-04T12:35:27.525Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Epi","timestamp":"2025-12-04T12:35:27.638Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Epi","timestamp":"2025-12-04T12:35:27.718Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Epid","timestamp":"2025-12-04T12:35:27.727Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Epid","timestamp":"2025-12-04T12:35:27.775Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Epi","timestamp":"2025-12-04T12:35:28.375Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Epi","timestamp":"2025-12-04T12:35:28.410Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Epic","timestamp":"2025-12-04T12:35:28.586Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Epic","timestamp":"2025-12-04T12:35:28.620Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Epi","timestamp":"2025-12-04T12:35:29.707Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Epi","timestamp":"2025-12-04T12:35:29.757Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The Ep","timestamp":"2025-12-04T12:35:29.852Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The Ep","timestamp":"2025-12-04T12:35:29.882Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The E","timestamp":"2025-12-04T12:35:29.990Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"The E","timestamp":"2025-12-04T12:35:30.044Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The ","timestamp":"2025-12-04T12:35:30.125Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The ","timestamp":"2025-12-04T12:35:30.210Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:35:30.304Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:35:30.379Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:35:30.438Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:35:30.556Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:35:30.604Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:35:30.691Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"t","timestamp":"2025-12-04T12:35:42.208Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"t","timestamp":"2025-12-04T12:35:42.315Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T12:36:02.630Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1142921","timestamp":"2025-12-04T12:36:02.723Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:36:03.042Z"}
+{"level":"info","message":"Fetching user bookings","timestamp":"2025-12-04T12:36:33.902Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":89,"level":"info","message":"User bookings retrieved","timestamp":"2025-12-04T12:36:34.157Z","userId":"6918596d088f8d3eb0f36d00"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T12:37:19.034Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1142921","timestamp":"2025-12-04T12:37:19.073Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:37:19.533Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:37:21.439Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:37:21.467Z"}
+{"city":"Hyderabad","date":"2025-12-05","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T12:37:28.668Z"}
+{"error":"No shows found for selected filters","level":"error","message":"Error fetching filtered shows","timestamp":"2025-12-04T12:37:28.692Z"}
+{"level":"info","message":"Fetching user bookings","timestamp":"2025-12-04T12:38:17.211Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":89,"level":"info","message":"User bookings retrieved","timestamp":"2025-12-04T12:38:17.412Z","userId":"6918596d088f8d3eb0f36d00"}
+{"email":"rameshgurrala37@gmail.com","level":"info","message":"User login successful","timestamp":"2025-12-04T12:41:25.080Z"}
+{"city":"Hyderabad","level":"info","message":"Fetching movies by city","timestamp":"2025-12-04T12:41:26.917Z"}
+{"city":"Hyderabad","count":2,"level":"info","message":"Movies by city retrieved","timestamp":"2025-12-04T12:41:26.969Z"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1196348","timestamp":"2025-12-04T12:42:04.336Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1196348","timestamp":"2025-12-04T12:42:04.365Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:42:05.602Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f453fad95550513010148","timestamp":"2025-12-04T12:42:05.746Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f453fad95550513010148","timestamp":"2025-12-04T12:42:05.780Z"}
+{"level":"info","message":"Fetching user bookings","timestamp":"2025-12-04T12:42:22.894Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":89,"level":"info","message":"User bookings retrieved","timestamp":"2025-12-04T12:42:23.085Z","userId":"6918596d088f8d3eb0f36d00"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"T","timestamp":"2025-12-04T12:43:04.396Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"T","timestamp":"2025-12-04T12:43:04.457Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Th","timestamp":"2025-12-04T12:43:04.576Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"The","timestamp":"2025-12-04T12:43:04.625Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"Th","timestamp":"2025-12-04T12:43:04.629Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":1,"query":"The","timestamp":"2025-12-04T12:43:04.680Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Thea","timestamp":"2025-12-04T12:43:04.975Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Thea","timestamp":"2025-12-04T12:43:05.003Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Theat","timestamp":"2025-12-04T12:43:05.225Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Theat","timestamp":"2025-12-04T12:43:05.259Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Theatr","timestamp":"2025-12-04T12:43:05.420Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Theatr","timestamp":"2025-12-04T12:43:05.444Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Theatre","timestamp":"2025-12-04T12:43:05.669Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Theatre","timestamp":"2025-12-04T12:43:05.693Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:43:10.330Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:43:10.384Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:43:10.726Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:43:10.778Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AMB","timestamp":"2025-12-04T12:43:10.942Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"AMB","timestamp":"2025-12-04T12:43:10.968Z"}
+{"level":"info","message":"Theatre details retrieved","screenCount":2,"showCount":0,"theatreId":"692d633469b7affc8c08340a","timestamp":"2025-12-04T12:43:13.242Z"}
+{"error":"theatre is not defined","level":"error","message":"Error fetching theatre details","theatreId":"692d633469b7affc8c08340a","timestamp":"2025-12-04T12:43:13.263Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:43:15.868Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:43:15.920Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:43:16.038Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:43:16.086Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:43:18.580Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:43:18.629Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:43:18.810Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:43:18.862Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AMB","timestamp":"2025-12-04T12:43:19.058Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"AMB","timestamp":"2025-12-04T12:43:19.082Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"AM","timestamp":"2025-12-04T12:43:20.470Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"AM","timestamp":"2025-12-04T12:43:20.518Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"A","timestamp":"2025-12-04T12:43:20.614Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"A","timestamp":"2025-12-04T12:43:20.662Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"C","timestamp":"2025-12-04T12:43:21.915Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":2,"query":"C","timestamp":"2025-12-04T12:43:21.963Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Ci","timestamp":"2025-12-04T12:43:22.091Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Ci","timestamp":"2025-12-04T12:43:22.117Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cin","timestamp":"2025-12-04T12:43:22.240Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cin","timestamp":"2025-12-04T12:43:22.266Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinr","timestamp":"2025-12-04T12:43:22.618Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinr","timestamp":"2025-12-04T12:43:22.641Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinrp","timestamp":"2025-12-04T12:43:22.821Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinrp","timestamp":"2025-12-04T12:43:22.845Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinr","timestamp":"2025-12-04T12:43:23.268Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinr","timestamp":"2025-12-04T12:43:23.291Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cin","timestamp":"2025-12-04T12:43:23.391Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cin","timestamp":"2025-12-04T12:43:23.416Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine","timestamp":"2025-12-04T12:43:23.467Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cine","timestamp":"2025-12-04T12:43:23.493Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine[","timestamp":"2025-12-04T12:43:24.434Z"}
+{"error":"Regular expression is invalid: missing terminating ] for character class","level":"error","message":"Unified search error","timestamp":"2025-12-04T12:43:24.465Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine[o","timestamp":"2025-12-04T12:43:24.661Z"}
+{"error":"Regular expression is invalid: missing terminating ] for character class","level":"error","message":"Unified search error","timestamp":"2025-12-04T12:43:24.687Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine[","timestamp":"2025-12-04T12:43:24.984Z"}
+{"error":"Regular expression is invalid: missing terminating ] for character class","level":"error","message":"Unified search error","timestamp":"2025-12-04T12:43:25.011Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cine","timestamp":"2025-12-04T12:43:25.134Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cine","timestamp":"2025-12-04T12:43:25.158Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinep","timestamp":"2025-12-04T12:43:25.368Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinep","timestamp":"2025-12-04T12:43:25.393Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinepo","timestamp":"2025-12-04T12:43:25.560Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinepo","timestamp":"2025-12-04T12:43:25.587Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinepol","timestamp":"2025-12-04T12:43:25.988Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinepol","timestamp":"2025-12-04T12:43:26.014Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinepoli","timestamp":"2025-12-04T12:43:26.156Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinepoli","timestamp":"2025-12-04T12:43:26.186Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search request","query":"Cinepolis","timestamp":"2025-12-04T12:43:26.290Z"}
+{"city":"691983c9a5bf9a5afaa1f632","level":"info","message":"Unified search results","movieCount":0,"query":"Cinepolis","timestamp":"2025-12-04T12:43:26.318Z"}
+{"level":"info","message":"Theatre details retrieved","screenCount":2,"showCount":2,"theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:43:28.188Z"}
+{"error":"theatre is not defined","level":"error","message":"Error fetching theatre details","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:43:28.189Z"}
+{"level":"info","message":"Fetching user bookings","timestamp":"2025-12-04T12:44:28.319Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":89,"level":"info","message":"User bookings retrieved","timestamp":"2025-12-04T12:44:28.467Z","userId":"6918596d088f8d3eb0f36d00"}
+{"city":"Hyderabad","date":"2025-12-04","level":"info","message":"Show filter request received","movieId":"1142921","timestamp":"2025-12-04T12:44:47.657Z"}
+{"city":"Hyderabad","count":0,"date":"2025-12-04","level":"info","message":"Filtered shows fetched","movieId":"1142921","timestamp":"2025-12-04T12:44:47.688Z"}
+{"level":"info","message":"Fetched theatre by ID","theatreId":"692d63ac69b7affc8c08341c","timestamp":"2025-12-04T12:44:47.926Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:49.025Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:49.056Z"}
+{"count":2,"level":"info","message":"Block seats request received","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:51.427Z"}
+{"count":2,"level":"info","message":"Seats blocked successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:51.470Z"}
+{"level":"info","message":"Pending booking creation request received","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:51.620Z","userId":"6918596d088f8d3eb0f36d00"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:51.624Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:44:51.698Z"}
+{"bookingId":"693182435a27a35b490ae31a","level":"info","message":"Pending booking created","timestamp":"2025-12-04T12:44:51.767Z"}
+{"level":"info","message":"Payment order creation request","timestamp":"2025-12-04T12:44:51.924Z"}
+{"level":"info","message":"Payment order created","timestamp":"2025-12-04T12:44:52.210Z"}
+{"level":"info","message":"Payment verification request","timestamp":"2025-12-04T12:45:30.734Z"}
+{"level":"info","message":"Payment verified and booking confirmed","timestamp":"2025-12-04T12:45:31.688Z"}
+{"bookingId":"693182435a27a35b490ae31a","level":"info","message":"Booking details retrieved","timestamp":"2025-12-04T12:45:32.169Z"}
+{"level":"info","message":"Fetching ShowSeats for show","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:45:32.250Z"}
+{"count":20,"level":"info","message":"ShowSeats fetched successfully","showId":"692f448fad95550513010135","timestamp":"2025-12-04T12:45:32.286Z"}
+{"level":"info","message":"Fetching user bookings","timestamp":"2025-12-04T12:45:47.802Z","userId":"6918596d088f8d3eb0f36d00"}
+{"count":90,"level":"info","message":"User bookings retrieved","timestamp":"2025-12-04T12:45:47.983Z","userId":"6918596d088f8d3eb0f36d00"}

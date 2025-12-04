@@ -91,7 +91,7 @@ exports.blockSeats = async (showSeatIds,showId) => {
   if (!Array.isArray(showSeatIds)) showSeatIds = [showSeatIds];
 
   const now = new Date();
-  const expires = new Date(now.getTime() + 4 * 60 * 1000); 
+  const expires = new Date(now.getTime() +  60 * 1000); 
 
   const validIds = showSeatIds.filter(id => mongoose.isValidObjectId(id));
 

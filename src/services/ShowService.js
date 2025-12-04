@@ -34,7 +34,14 @@ exports.CreateShow = async (data) => {
  * Get shows by City
  */
 exports.getShowsByCity = async (city) => {
-  const result = await Show.find({ city });
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date();
+  const todayString = today.toISOString().split('T')[0];
+
+  const result = await Show.find({ 
+    city,
+    date: { $gte: todayString } // Only future/today's shows
+  }).sort({ date: 1, startTime: 1 });
 
   if (result.length === 0)
     throw new Error("No Shows found for this city");
@@ -53,7 +60,14 @@ exports.getShowsByCity = async (city) => {
  * Get shows by Movie (TMDB movieId)
  */
 exports.getShowsByMovie = async (movieId) => {
-  const result = await Show.find({ movieId });
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date();
+  const todayString = today.toISOString().split('T')[0];
+
+  const result = await Show.find({ 
+    movieId,
+    date: { $gte: todayString } // Only future/today's shows
+  }).sort({ date: 1, startTime: 1 });
 
   if (result.length === 0)
     throw new Error("No Shows found for this movie");
@@ -72,7 +86,14 @@ exports.getShowsByMovie = async (movieId) => {
  * Get shows by Theatre
  */
 exports.getShowsByTheatre = async (theatreId) => {
-  const result = await Show.find({ theatreId });
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date();
+  const todayString = today.toISOString().split('T')[0];
+
+  const result = await Show.find({ 
+    theatreId,
+    date: { $gte: todayString } // Only future/today's shows
+  }).sort({ date: 1, startTime: 1 });
 
   if (result.length === 0)
     throw new Error("No Shows found for this theatre");
@@ -91,7 +112,14 @@ exports.getShowsByTheatre = async (theatreId) => {
  * Get shows by Screen
  */
 exports.getShowsByScreen = async (screenId) => {
-  const result = await Show.find({ screenId });
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date();
+  const todayString = today.toISOString().split('T')[0];
+
+  const result = await Show.find({ 
+    screenId,
+    date: { $gte: todayString } // Only future/today's shows
+  }).sort({ date: 1, startTime: 1 });
 
   if (result.length === 0)
     throw new Error("No Shows found for this screen");
@@ -141,13 +169,6 @@ exports.getShowsByMovieCityDate = async (movieId, city, date) => {
     date
   });
 
-  console.log("The movieId received is",movieId);
-  console.log("The city received is",city);
-  console.log("The date received is",date);
-
-
-
-  console.log("The filtered shows are",result);
   if (result.length === 0)
     throw new Error("No shows found for selected filters");
 

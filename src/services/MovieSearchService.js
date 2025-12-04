@@ -50,7 +50,15 @@ exports.searchMovies = async (query) => {
 
 
 exports.getMoviesByCity = async (city) => {
-  const shows = await Show.find({ city });
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date();
+  const todayString = today.toISOString().split('T')[0]; // Format: "2025-12-04"
+
+  // Only fetch shows from today onwards
+  const shows = await Show.find({ 
+    city,
+    date: { $gte: todayString } // Filter to only future/today's shows
+  }).sort({ date: 1, startTime: 1 });
 
   if (shows.length === 0)
     return { status: 200, data: [] };

@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const logger = require('../utils/logger')
 const { createSeat, createManySeats,getSeatsByScreen } = require('../services/SeatService')
 const Seat = require('../models/Seat')
 const router = express.Router()
@@ -8,25 +9,23 @@ const router = express.Router()
 router.post("/Seat",async(req,res)=>{
     try{
         const result = await createSeat(req.body)
+        logger.info("Seat created successfully", { seatNumber: req.body.seatNumber });
         return res.status(result.status).send(result.data.data)
     }catch(err){
-        console.log("SOmething went wrong while creating the seat ",err);
+        logger.error("Error creating seat", { error: err.message });
         return res.status(500).send(err)
         
     }
 })
 
 router.post("/Seats", async (req,res)=>{
-    // console.log("\n=== POST /Seats START ===");
-    console.log("Controller received", req.body.length, "seats");
-    console.log("data received:", req.body);
+    logger.info("Bulk seat creation request received", { count: req.body.length });
     try{
         const result = await createManySeats(req.body)
-        console.log("=== POST /Seats END (SUCCESS) ===\n");
+        logger.info("Bulk seats created successfully", { count: result.data.data.length });
         return res.status(result.status).send(result.data.data)
     }catch(err){
-        console.log("❌ Something went wrong while creating bulk seats:", err.message);
-        console.log("=== POST /Seats END (ERROR) ===\n");
+        logger.error("Error creating bulk seats", { error: err.message });
         return res.status(500).send({error: err.message, stack: err.stack})
     }
 })
@@ -35,10 +34,10 @@ router.post("/Seats", async (req,res)=>{
 router.get("/seats/:screenId",async(req,res)=>{
     try{
     const result = await getSeatsByScreen(req.params.screenId)
-    console.log(`SeatController: Retrieved ${result.data.data.length} seats for screen ${req.params.screenId}`);
+    logger.info("Fetched seats by screen", { screenId: req.params.screenId, count: result.data.data.length });
     return res.status(result.status).send(result.data.data)
     }catch(err){
-        console.log("Something went wrong while fetching seats by screen",err);
+        logger.error("Error fetching seats by screen", { screenId: req.params.screenId, error: err.message });
         return res.status(500).send(err)        
     }
 })

@@ -11,10 +11,11 @@ module.exports = function (req, res, next) {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.jwtPrivateKey);
     req.user = decoded; // attach user data to request object
     next();
   } catch (err) {
+    console.log("Some error is getting raising in auth middleware", err);
     console.log("JWT Error:", err.name);
 
     if (err.name === "TokenExpiredError") {

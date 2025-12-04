@@ -3,7 +3,7 @@ const cron = require("node-cron");
 const ShowSeat = require("./src/models/ShowSeat");
 const mongoose = require("mongoose");
 
-cron.schedule("*/10 * * * * *", async () => {
+cron.schedule("*/1 * * * *", async () => {
   console.log("⏳ Running seat cleanup cron...");
 
   // Check if connected before running cron
